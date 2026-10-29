@@ -1,0 +1,67 @@
+\version "2.26.0"
+
+\header {
+  title = "Kontakion of the Dead"
+  subtitle = "Kiev Melody"
+  composer = "trans. WJ Birkbeck, 1869-1916"
+  tagline = ##f
+}
+
+\paper {
+  page-count = #1
+}
+
+\score {
+  \relative c'' {
+    \cadenzaOn
+    \repeat segno 2 {
+    a2^\markup{\italic{Molto sostenuto}}^\mp( gis) a4( c) b( a) gis2 r \bar "|" \break
+    c4 c2( b) a gis a4( gis) a( b) c2 r \bar "|" \break
+    c b( a4) gis2 gis4 a2 a4 b c r2 \bar "|" \break
+    c b( a) gis1 a4.( gis8 a4 b)
+    c1^\< d4( c) b d c2( b\!) a\fermata r \fine \bar "||" \break
+    
+    \section
+    c^\mp b4 b a b c2( b4) a2 r \bar "|" \break
+    b4 c d c c( b) c2 c4 d b2 r \bar "|" \break
+    b4^\mf c c c c b2 a4 c b2 b4 a gis2 r \bar "|" \break
+    b4^\mp b b b a( b) c2 b4 a2 r \bar "|" \break
+    b4( c) d2 c4( b) c( d) b2 r \bar "|" \break
+    b4^\mf c c b2 a4 c b2( a) gis r \bar "|" \break
+    b4^\p b b b b b a( b) c2 b4 a2 r \bar "|" \break
+    b4^\< c d c\! c( b) c2^\> d b\! r \bar "|" \break
+    c b4. b8 b4 a gis2 gis4^\< a b c2\! r  \bar "|" \break
+    c4.^\f c8 c4 c b4. b8 b4 b a^\markup{\italic{rit.}} a gis2 a2\fermata r \bar "|."
+    }
+    \cadenzaOff
+  }
+  \addlyrics {
+  Give rest, O Christ,
+  to your ser -- vant[s] with the saints:
+  where sor -- row and pain are no more,
+  nei -- ther sigh -- ing, __ but life ev -- er -- las -- ting.
+
+  You on -- ly are im -- mor -- tal,
+  the cre -- a -- tor and ma -- ker of all:
+  and we are mor -- tal, formed from the dust of the earth,
+  and un -- to earth shall we re -- turn.
+  For so you or -- dained
+  when you cre -- a -- ted me, say -- ing:
+  ‘Dust you are and to dust you shall re -- turn.’
+  All of us go down to the dust,
+  yet wee -- ping at the grave, we make our song:
+  Al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia.
+  }
+  \layout {
+    indent = 0
+    ragged-right = ##t
+    \context {
+      \Score
+      \omit BarNumber
+    }
+    \context {
+      \Staff
+      \omit TimeSignature
+    }
+  }
+}
