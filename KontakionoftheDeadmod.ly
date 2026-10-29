@@ -58,9 +58,6 @@
     \context {
       \Score
       \omit BarNumber
-    }
-    \context {
-      \Staff
       \omit TimeSignature
     }
   }
